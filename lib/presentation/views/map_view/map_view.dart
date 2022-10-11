@@ -69,7 +69,7 @@ class _MapViewState extends ConsumerState<MapView> {
           children: [
             GoogleMap(
               markers: <Marker>{dir3iyadhMarker, riyadhParkMarker, riyadhFrontMarker},
-              padding: EdgeInsets.symmetric(horizontal: getWidth(context, 60), vertical: getHeight(context, 50)),
+              padding: EdgeInsets.symmetric(horizontal: getWidth(context, 70), vertical: getHeight(context, 50)),
               myLocationButtonEnabled: false,
               myLocationEnabled: false,
               zoomControlsEnabled: false,
