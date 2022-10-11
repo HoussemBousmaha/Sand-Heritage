@@ -37,5 +37,3 @@
 ```flutter build apk```
 
 - after building the apk file will be in build/app/outputs/apk/release/app-release.apk
-
-## or download the apk file from this github repository
