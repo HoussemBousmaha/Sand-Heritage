@@ -1,4 +1,4 @@
-# Sand Heritage Application
+# تطبيق إرث الرمال
 
 ## المشكلة
 
