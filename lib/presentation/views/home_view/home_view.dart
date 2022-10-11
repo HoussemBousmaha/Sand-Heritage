@@ -46,6 +46,7 @@ class _VideoViewState extends ConsumerState<VideoView> {
     controller = VideoPlayerController.asset(widget.path);
     controller.addListener(() => setState(() {}));
     controller.initialize().then((_) => setState(() {}));
+    controller.setLooping(true);
     Future.delayed(const Duration(milliseconds: 600)).then((_) => controller.play());
     super.initState();
   }
@@ -59,6 +60,7 @@ class _VideoViewState extends ConsumerState<VideoView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: ColorManager.kWhite,
       body: GestureDetector(
         onTap: () async {
           if (controller.value.isPlaying) {
@@ -70,9 +72,15 @@ class _VideoViewState extends ConsumerState<VideoView> {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            Container(
-              alignment: Alignment.center,
-              child: VideoPlayer(controller),
+            SizedBox.expand(
+              child: FittedBox(
+                fit: BoxFit.cover,
+                child: SizedBox(
+                  height: 1,
+                  width: MediaQuery.of(context).size.aspectRatio,
+                  child: VideoPlayer(controller),
+                ),
+              ),
             ),
             if (!controller.value.isPlaying) Icon(Icons.play_arrow, size: getHeight(context, 70), color: ColorManager.kWhite),
           ],
