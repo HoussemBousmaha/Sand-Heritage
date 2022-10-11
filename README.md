@@ -28,7 +28,7 @@
 
 ```cd sand_heritage```
 
-```flutter create --platform ios,android .```
+```flutter create --platforms ios,android .```
 
 ```flutter run --release```
 
