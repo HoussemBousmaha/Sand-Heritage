@@ -1,0 +1,41 @@
+name: sand_culture
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.2 <3.0.0"
+
+dependencies:
+  asset_cache: ^2.0.0
+  audio_video_progress_bar: ^0.11.0
+  audioplayers: ^1.1.1
+  cached_network_image: ^3.2.2
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  flutter_hooks: ^0.18.5+1
+  flutter_riverpod: ^2.0.2
+  flutter_svg: ^1.1.5
+  google_maps_flutter: ^2.2.1
+  google_ml_vision: ^0.0.7
+  hooks_riverpod: ^2.0.2
+  image_picker: ^0.8.6
+  intl: ^0.17.0
+  translator: ^0.1.7
+  video_player: ^2.4.7
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/videos/
+    - assets/audios/
