@@ -59,7 +59,7 @@ class _ExperienceViewState extends ConsumerState<ExperienceView> {
 
       print('scanned text: $scannedText');
 
-      final translatedText = await translator.translate(scannedText, to: 'en');
+      final translatedText = await translator.translate(scannedText, to: 'ar');
 
       print('translated text: $translatedText');
 
