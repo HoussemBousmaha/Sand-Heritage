@@ -19,3 +19,23 @@
 ## الشركاء المستهدفين
 
 - السیاح المهتمین بالثقافة السعودیة والتجربة الحیة الترفیهیة التثقیفیة
+
+## How to run
+
+```git clone https://github.com/HoussemBousmaha/Sand-Heritage.git```
+
+```mv Sand-Heritage sand_heritage```
+
+```cd sand_heritage```
+
+```flutter create --platform ios,android .```
+
+```flutter run --release```
+
+## or
+
+```flutter build apk```
+
+- after building the apk file will be in build/app/outputs/apk/release/app-release.apk
+
+## or download the apk file from this github repository
