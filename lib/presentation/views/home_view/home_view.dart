@@ -43,7 +43,7 @@ class _VideoViewState extends ConsumerState<VideoView> {
 
   @override
   void initState() {
-    controller = VideoPlayerController.network("https://www.youtube.com/watch?v=4pcTUoS3yKQ");
+    controller = VideoPlayerController.asset(widget.path);
     controller.addListener(() => setState(() {}));
     controller.initialize().then((_) => setState(() {}));
     Future.delayed(const Duration(milliseconds: 600)).then((_) => controller.play());
