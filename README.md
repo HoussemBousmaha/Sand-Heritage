@@ -20,6 +20,10 @@
 
 - السیاح المهتمین بالثقافة السعودیة والتجربة الحیة الترفیهیة التثقیفیة
 
+## watch a demo of the app
+
+- تستطيع مشاهدة كيفية عمل التطبيق من خلال الفيديو الموجود في outputs/demo.mp4
+
 ## How to run
 
 ```git clone https://github.com/HoussemBousmaha/Sand-Heritage.git```

@@ -32,8 +32,6 @@ migrate_working_dir/
 .pub/
 /build/
 
-android/
-ios/
 .vscode/
 
 # Symbolication related
